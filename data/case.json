@@ -1,29 +1,104 @@
 {
+  "case_id": "case-urban-tree-care-decisions",
   "records": [
     {
-      "id": "TR-1",
-      "text": "东门内侧靠墙的老槐，树干有纵向空洞，先别上梯。",
-      "kind": "inspection"
+      "id": "TR-S1",
+      "kind": "survey",
+      "text": "东门靠墙老槐树干空洞，它旁边靠灯柱的一株只有西侧枯枝；先别上前一株的梯。"
     },
     {
-      "id": "TR-2",
-      "text": "承包队计划明早清理东门枯枝，作业对象待园林编号确认。",
-      "kind": "work-plan"
+      "id": "TR-H1",
+      "kind": "history",
+      "text": "G88八月改号G204，同一株；九月移至西门，东门原树穴补植N12。"
     },
     {
-      "id": "TR-3",
-      "text": "编号 G-88 更名 G-204，现场位置未变；同处还有一株槐树。",
-      "kind": "asset-update"
-    }
-  ],
-  "assets": [
+      "id": "TR-H2",
+      "kind": "history",
+      "text": "灯柱旁G205一直未移植；东门街更名书院路。"
+    },
     {
-      "id": "G-204",
-      "aliases": [
-        "G-88"
-      ],
-      "site": "东门内侧"
+      "id": "TR-W1",
+      "kind": "plan",
+      "text": "明早清理东门第二株西侧枯枝，给有空洞那株做地面隔离，不攀爬空心树。"
+    },
+    {
+      "id": "TR-W2",
+      "kind": "completion",
+      "text": "上午清理第二株西侧枯枝；靠墙树拉了隔离带，没有处理树干。"
+    },
+    {
+      "id": "TR-I1",
+      "kind": "inspection",
+      "text": "西门G204空洞仍在，隔离不消除攀爬风险，复查需空洞稳定性记录。"
+    },
+    {
+      "id": "TR-I2",
+      "kind": "inspection",
+      "text": "东门补植N12支架松动，要求重固复查，未观察到空洞。"
+    },
+    {
+      "id": "TR-C1",
+      "kind": "correction",
+      "text": "TR-S1实际为移植前八月十日记录，原日期九月十日错误；灯柱方位未变。"
+    },
+    {
+      "id": "TR-W3",
+      "kind": "completion",
+      "text": "N12支架已重固，不涉及G204，也未处理G205东侧枝。"
+    },
+    {
+      "id": "TR-R1",
+      "kind": "review",
+      "text": "N12支架固定有效，可解除该项围挡；不适用于其他树。"
+    },
+    {
+      "id": "TR-P1",
+      "kind": "photo-caption",
+      "text": "九月二十日补传东门照片，拍摄日未知，画面两株槐树，编号不可辨。"
     }
   ],
-  "case_id": "tree-1"
+  "objects": {
+    "assets": [
+      {
+        "id": "G204",
+        "old_ids": [
+          "G88"
+        ],
+        "site": "西门"
+      },
+      {
+        "id": "G205",
+        "site": "东门灯柱旁"
+      },
+      {
+        "id": "N12",
+        "site": "东门靠墙",
+        "replaced": "G204"
+      }
+    ],
+    "rules": [
+      {
+        "id": "RULE-C",
+        "text": "树干空洞未复查前不攀爬，地面隔离可独立进行。"
+      },
+      {
+        "id": "RULE-B",
+        "text": "清枝完成仅覆盖回单部位，不代替树干或支架复查。"
+      }
+    ]
+  },
+  "existing": [
+    {
+      "id": "TW1",
+      "state": "issued",
+      "source": "TR-W1",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "R1",
+      "asset": "G204",
+      "state": "open",
+      "source": "TR-I1"
+    }
+  ]
 }
