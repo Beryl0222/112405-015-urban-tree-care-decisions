@@ -1,0 +1,29 @@
+{
+  "records": [
+    {
+      "id": "TR-1",
+      "text": "东门内侧靠墙的老槐，树干有纵向空洞，先别上梯。",
+      "kind": "inspection"
+    },
+    {
+      "id": "TR-2",
+      "text": "承包队计划明早清理东门枯枝，作业对象待园林编号确认。",
+      "kind": "work-plan"
+    },
+    {
+      "id": "TR-3",
+      "text": "编号 G-88 更名 G-204，现场位置未变；同处还有一株槐树。",
+      "kind": "asset-update"
+    }
+  ],
+  "assets": [
+    {
+      "id": "G-204",
+      "aliases": [
+        "G-88"
+      ],
+      "site": "东门内侧"
+    }
+  ],
+  "case_id": "tree-1"
+}
